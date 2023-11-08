@@ -1,0 +1,334 @@
+INFO:root:Begin experiment
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2759 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2753 (11.0 s), ~207 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2753 (11.0 s), ~207 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2758 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2752 (11.0 s), ~207 kB, data loaded>
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:Begin experiment
+INFO:root:<RawArray | 9 x 2754 (11.0 s), ~207 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:Begin experiment
+INFO:root:<RawArray | 9 x 2758 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2759 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2758 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2759 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2753 (11.0 s), ~207 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2754 (11.0 s), ~207 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2754 (11.0 s), ~207 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2752 (11.0 s), ~207 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: Fabby
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:Begin experiment
+INFO:root:Begin experiment
+INFO:root:Begin experiment
+INFO:root:Releasing session
+INFO:root:Begin experiment
+INFO:root:Releasing session
+INFO:root:Begin experiment
+INFO:root:<RawArray | 17 x 45018 (180.1 s), ~5.9 MB, data loaded>
+INFO:root:<RawArray | 17 x 45009 (180.0 s), ~5.9 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 17 x 45014 (180.1 s), ~5.9 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 9 x 45086 (180.3 s), ~3.1 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 9 x 45102 (180.4 s), ~3.1 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 9 x 45079 (180.3 s), ~3.1 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 9 x 45077 (180.3 s), ~3.1 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 9 x 45074 (180.3 s), ~3.1 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 9 x 45073 (180.3 s), ~3.1 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 9 x 45078 (180.3 s), ~3.1 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 9 x 45072 (180.3 s), ~3.1 MB, data loaded>
+INFO:root:Releasing session
+INFO:root:<RawArray | 9 x 2762 (11.0 s), ~208 kB, data loaded>
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:<RawArray | 9 x 2758 (11.0 s), ~208 kB, data loaded>
+INFO:root:<RawArray | 9 x 2761 (11.0 s), ~208 kB, data loaded>
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2758 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2761 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2751 (11.0 s), ~207 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2762 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2764 (11.1 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2748 (11.0 s), ~207 kB, data loaded>
+INFO:root:<RawArray | 9 x 2754 (11.0 s), ~207 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2758 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 0
+INFO:root:Condition: left
+INFO:root:<RawArray | 9 x 2755 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2756 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2760 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 0
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:<RawArray | 9 x 2757 (11.0 s), ~208 kB, data loaded>
+INFO:root:Filename: pop
+INFO:root:Actual: 1
+INFO:root:Predicted: 1
+INFO:root:Condition: right
+INFO:root:Releasing session
