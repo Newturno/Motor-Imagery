@@ -98,15 +98,15 @@ IMAGE_FOLDER:str = 'images/'
 VIDEO_FOLDER:str = 'video/'
 ERD_FOLDER:str = 'erd/'
 ONLINE_FOLDER:str = 'dataset/online_EEG'
-RECORED_PATH = "/Users/pongkornsettasompop/Desktop/work/Motor_imagery/EEG-python/dataset/recorded_EEG"
-ONLINE_PATH = "/Users/pongkornsettasompop/Desktop/work/Motor_imagery/EEG-python/Training/save_weight/S17_Conv2_iir_-2-5_8-13_3ch/0.6726_S17_Conv2_iir_-2-5_8-13_3ch_0.6726_58.3333.pth"
+RECORED_PATH = "/Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/dataset/recorded_EEG"
+ONLINE_PATH = "/Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/save_weight/S17_Conv2_iir_-2-5_8-13_3ch/0.6726_S17_Conv2_iir_-2-5_8-13_3ch_0.6726_58.3333.pth"
 
-DUMMY_PATH = "/Users/pongkornsettasompop/Desktop/work/Motor_imagery/EEG-python/Training/save_weight/Test/0.7243_Test_0.7243_50.0000.pth"
+DUMMY_PATH = "/Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/save_weight/Test/0.7243_Test_0.7243_50.0000.pth"
 
 ONLINE_PATH_DICT = {
-    'Fabby':"/Users/pongkornsettasompop/Desktop/work/Motor_imagery/EEG-python/Training/save_weight/S18_Conv2_iir_-2-5_8-13_3ch/0.6620_S18_Conv2_iir_-2-5_8-13_3ch_0.6620_65.0000.pth",
-    'Pop':"/Users/pongkornsettasompop/Desktop/work/Motor_imagery/EEG-python/Training/save_weight/S19_Conv2_irr_-2-5_8-13_3ch/0.6654_S19_Conv2_irr_-2-5_8-13_3ch_0.6654_60.0000.pth",
-    'New':"/Users/pongkornsettasompop/Desktop/work/Motor_imagery/EEG-python/Training/save_weight/S17_Conv2_iir_-2-5_8-13_3ch/0.6726_S17_Conv2_iir_-2-5_8-13_3ch_0.6726_58.3333.pth"
+    'Fabby':"/Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/save_weight/S18_Conv2_iir_-2-5_8-13_3ch/0.6620_S18_Conv2_iir_-2-5_8-13_3ch_0.6620_65.0000.pth",
+    'Pop':"/Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/save_weight/S19_Conv2_irr_-2-5_8-13_3ch/0.6654_S19_Conv2_irr_-2-5_8-13_3ch_0.6654_60.0000.pth",
+    'New':"/Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/save_weight/S17_Conv2_iir_-2-5_8-13_3ch/0.6726_S17_Conv2_iir_-2-5_8-13_3ch_0.6726_58.3333.pth"
 }
 BG_DICT ={
     'Fabby':"img/fabby_bg.png",
