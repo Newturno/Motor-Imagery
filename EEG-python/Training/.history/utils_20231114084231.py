@@ -201,6 +201,7 @@ def bandpower(data, sf, band, method='welch', window_sec=None, relative=False):
 
     band = np.asarray(band)
     low, high = band
+    print(low,high)
 
     # Compute the modified periodogram (Welch)
     if method == 'welch':
@@ -209,12 +210,10 @@ def bandpower(data, sf, band, method='welch', window_sec=None, relative=False):
         else:
             nperseg = (2 / low) * sf
 
-        psd,freqs = psd_array_welch(data, sf, fmin=low,fmax=high,n_per_seg=int(nperseg))
+        psd,freqs = psd_array_welch(data, sf, fmin=low,fmax=high,n_per_seg=125)
         
-    elif method == 'multitaper':
-        psd,freqs = psd_array_multitaper(data, sf, adaptive=True,
-                                          normalization='full', verbose='error')
-        
+    print("FREQUENCY" + str(freqs))
+    print("PSD"+str(psd))
     avg_band_power = np.mean(psd)
 
     return avg_band_power
