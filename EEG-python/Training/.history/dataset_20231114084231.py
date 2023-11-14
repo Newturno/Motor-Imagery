@@ -55,18 +55,16 @@ class EEG:
                 count += 1
 
         raw = mne.io.concatenate_raws(raws)
+        #eegbci.standardize(raw)
         #montage = mne.channels.make_standard_montage('standard_1020')
         #raw.set_montage(montage)
+        #print(raw.info['ch_names'])
+        #print(raw.info['sfreq'])
+        #raw.set_eeg_reference(ref_channels=["Cz"])
+        #raw.pick_channels(['C3','C4','STIM MARKERS'])
+        #raw.pick_channels(['C3','Cz','C4','PO7','Pz','PO8','STIM MARKERS'])
+        #print(raw.info['ch_names'])
         self.raw = raw
-        return self.raw
-    
-    
-    
-    def set_reference(self,raw,channel):
-        self.raw = raw.set_eeg_reference(ref_channels=channel)
-        return self.raw
-    def pickChannel(self,raw,channel):
-        self.raw = raw.pick_channels(channel)
         return self.raw
     
     def raw_preprocess(self,raw,event_id):
