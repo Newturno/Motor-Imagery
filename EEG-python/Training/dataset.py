@@ -67,7 +67,7 @@ class EEG:
         self.raw = raw
         return self.raw
     
-    def raw_preprocess(self,raw):
+    def raw_preprocess(self,raw,event_id):
         #return as epoch data
         dura_sam = 250 * 5
         trialofintereted = []
@@ -84,8 +84,13 @@ class EEG:
         eeg_df = pd.DataFrame(self.eeg_raw.T,columns=raw.ch_names)
         eeg_df['Timestamps'] = timestamps * 250
         
-        tg_onset_sth.extend(np.where(eeg_df['STIM MARKERS'] == int(1.0))[0])
-        tg_onset_sth.extend(np.where(eeg_df['STIM MARKERS'] == int(2.0))[0])
+        # target filter
+        for e in event_id:
+            tg_onset_sth.extend(np.where(eeg_df['STIM MARKERS'] == int(e))[0])
+        
+        print(tg_onset_sth)
+        
+        #tg_onset_sth.extend(np.where(eeg_df['STIM MARKERS'] == int(2.0))[0])
         
         selected_onset = np.array(tg_onset_sth)
         onset = raw.copy().get_data()
@@ -116,7 +121,7 @@ class EEG:
             trialofintereted.append(filtered)
         temp = [t[np.newaxis, ...] for t in trialofintereted]
         data = np.concatenate(temp)
-        y = eeg_df[eeg_df['STIM MARKERS'].isin([1.0,2.0])]
+        y = eeg_df[eeg_df['STIM MARKERS'].isin(event_id)]
         y = y['STIM MARKERS'].to_numpy().astype(int) - 1
         self.X = data
         self.y = y

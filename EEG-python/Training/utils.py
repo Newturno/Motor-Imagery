@@ -197,10 +197,11 @@ def bandpower(data, sf, band, method='welch', window_sec=None, relative=False):
     """
     from scipy.signal import welch
     from scipy.integrate import simps
-    from mne.time_frequency import psd_array_multitaper
+    from mne.time_frequency import psd_array_multitaper,psd_array_welch
 
     band = np.asarray(band)
     low, high = band
+    print(low,high)
 
     # Compute the modified periodogram (Welch)
     if method == 'welch':
@@ -209,21 +210,10 @@ def bandpower(data, sf, band, method='welch', window_sec=None, relative=False):
         else:
             nperseg = (2 / low) * sf
 
-        freqs, psd = welch(data, sf, nperseg=nperseg)
+        psd,freqs = psd_array_welch(data, sf, fmin=low,fmax=high,n_per_seg=125)
+        
+    print("FREQUENCY" + str(freqs))
+    print("PSD"+str(psd))
+    avg_band_power = np.mean(psd)
 
-    elif method == 'multitaper':
-        psd, freqs = psd_array_multitaper(data, sf, adaptive=True,
-                                          normalization='full', verbose=0)
-
-    # Frequency resolution
-    freq_res = freqs[1] - freqs[0]
-
-    # Find index of band in frequency vector
-    idx_band = np.logical_and(freqs >= low, freqs <= high)
-
-    # Integral approximation of the spectrum using parabola (Simpson's rule)
-    bp = simps(psd[idx_band], dx=freq_res)
-
-    if relative:
-        bp /= simps(psd, dx=freq_res)
-    return bp
+    return avg_band_power
