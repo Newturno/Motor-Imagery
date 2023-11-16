@@ -60,8 +60,6 @@ class EEG:
         self.raw = raw
         return self.raw
     
-    
-    
     def set_reference(self,raw,channel):
         self.raw = raw.set_eeg_reference(ref_channels=channel)
         return self.raw
@@ -69,7 +67,7 @@ class EEG:
         self.raw = raw.pick_channels(channel)
         return self.raw
     
-    def raw_preprocess(self,raw,event_id):
+    def raw_preprocess(self,raw,event_id,rest_stage=False):
         #return as epoch data
         dura_sam = 250 * 5
         trialofintereted = []
@@ -78,6 +76,7 @@ class EEG:
         offset2 = 1 * 250
         iir_param = dict(order=6, ftype='butter', output='sos')
         raw_pad = raw.get_data()
+        channel_length = len(raw.info['ch_names'])
         padded = np.empty([2, dura_sam+(2*padding)+(2*offset)])
         tg_onset_sth = []
         
@@ -100,7 +99,11 @@ class EEG:
         for trials in range(selected_onset.shape[0]):
             onset_idx = selected_onset[trials]
             #fist is channle second is selected time samples(1250)
-            temp = raw_pad[:,onset_idx - offset :onset_idx+dura_sam + offset2]
+            if rest_stage == True:
+                temp = raw_pad[:,onset_idx - 250 :onset_idx + 250 + offset2]
+            else:                                
+                temp = raw_pad[:,onset_idx - offset :onset_idx+dura_sam + offset2]
+
             #print(temp -= mean)
             #print(temp.shape)
             #print(padded.shape)
@@ -113,13 +116,16 @@ class EEG:
             #     #print("After padded")
             #     #print(padded.shape)
             #filtered_data = mne.filter.filter_data(temp[0:3,:], sfreq=250, l_freq=8, h_freq=13,method='fir',verbose='error')
-            filtered_data = mne.filter.filter_data(temp[0:3,:], sfreq=250, l_freq=8, h_freq=13,method='iir',iir_params=iir_param,verbose=False) # bandpass
-            filtered_temp = mne.filter.notch_filter(filtered_data, Fs=250, freqs=50, verbose=False) # notch
+            filtered_data = mne.filter.filter_data(temp[0:channel_length-1,:], sfreq=250, l_freq=8, h_freq=13,method='iir',iir_params=iir_param,verbose='error') # bandpass
+            filtered_temp = mne.filter.notch_filter(filtered_data, Fs=250, freqs=50, verbose='error') # notch
             
             #print(filtered_temp.shape)
             #plt.plot(filtered_temp[0,:])
-            filtered = filtered_temp[:,offset2:offset+dura_sam]
-            
+            if rest_stage == True:
+                filtered = filtered_temp[:,offset2:offset2+250]
+            else:
+                filtered = filtered_temp[:,offset2:offset+dura_sam]
+
             trialofintereted.append(filtered)
         temp = [t[np.newaxis, ...] for t in trialofintereted]
         data = np.concatenate(temp)

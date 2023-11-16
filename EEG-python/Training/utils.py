@@ -170,9 +170,6 @@ def train(model, loader_train, loader_test, optimizer,criterion,device,wand,vail
 
 def bandpower(data, sf, band, method='welch', window_sec=None, relative=False):
     """Compute the average power of the signal x in a specific frequency band.
-
-    Requires MNE-Python >= 0.14.
-
     Parameters
     ----------
     data : 1d-array
@@ -186,14 +183,11 @@ def bandpower(data, sf, band, method='welch', window_sec=None, relative=False):
     window_sec : float
       Length of each window in seconds. Useful only if method == 'welch'.
       If None, window_sec = (1 / min(band)) * 2.
-    relative : boolean
-      If True, return the relative power (= divided by the total power of the signal).
-      If False (default), return the absolute power.
 
     Return
     ------
     bp : float
-      Absolute or relative band power.
+      Absolute band power.
     """
     from scipy.signal import welch
     from scipy.integrate import simps
