@@ -132,7 +132,7 @@ class ModeWindow(QWidget):
         
         online_btn = QPushButton("Resting Mode",self)
         online_btn.setGeometry(290, 170, 150, 50)
-        online_btn.pressed.connect(self.resting)
+        online_btn.pressed.connect(self.online)
         
         file_btn = QPushButton('Open File Dialog', self)
         file_btn.clicked.connect(self.showDialog)
@@ -149,7 +149,7 @@ class ModeWindow(QWidget):
         self.close()
         print("Offline")
         
-    def resting(self):
+    def online(self):
         self.info[4] = True
         self.w = RecordWindow(self.info,self.fileURL)
         self.w.show()
@@ -187,32 +187,50 @@ class RecordWindow(QWidget):
         logging.getLogger().setLevel(logging.DEBUG)
         global IS_FINISH
         
+        #MQTT CONNECT
+        if info[4] == True:
+            #client = None
+            path = self.fileURL
+            model = ConvNet2()
+            model.load_state_dict(torch.load(path))
+            model.eval()
+            print("Model loaded")
+            #client = None
+            client = self.connect_mqtt()
+            print("Mqtt connect")
+        
         data = board.get_board_data()
         sequence = STIMULIT_SEQUENCE
         sound_array, fs_array = self.getSound()
         #Start
         logging.info(f"Experiment order: {sequence}")
-        if info[4] == True:
-            self.playSound(sound_array[3],fs_array[3],60,board,3.0)
-        else:
-            with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-                for trials in range(NUM_TRIAL):
-                    print(f'{"Trials :" + str(trials+1)}')
-                    #voice left and right and rest
-                    #rest 2 sec
-                    self.playSound(sound_array[4],fs_array[4],1,board,3.0)
-                    #cue and Imagine 6 sec
-                    self.playSound(sound_array[sequence[trials]],fs_array[sequence[trials]],6,board,BLOCK_MARKER[sequence[trials]])
+        
+        with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+            for trials in range(NUM_TRIAL):
+                print(f'{"Trials :" + str(trials+1)}')
+                #voice left and right and rest
+                #rest 2 sec
+                self.playSound(sound_array[4],fs_array[4],1,board,3.0)
+                #cue and Imagine 6 sec
+                self.playSound(sound_array[sequence[trials]],fs_array[sequence[trials]],6,board,BLOCK_MARKER[sequence[trials]])
                 
-        block_name = f'{PARTICIPANT_ID}R{ORDER_NUM:02d}' 
-        headname = f'{int(info[1]):03d}'
-        block_name = f'{"S" + str(headname)}R{int(info[2]):02d}'
-        data = board.get_board_data()
-        data_copy = data.copy()
-        board_ID = BOARD[self.info[3]]
-        raw = getdata(data_copy,board_ID,n_samples = 250,dropEnable = DROPENABLE)
-        save_raw(raw,block_name,RECORDING_DIR,info)
-        IS_FINISH = True
+                if info[4] == True:
+                    self.online_predict(board,info,client,model)
+        
+        
+        if info[4] == True:
+            IS_FINISH = True
+        else:
+            #saving
+            block_name = f'{PARTICIPANT_ID}R{ORDER_NUM:02d}' 
+            headname = f'{int(info[1]):03d}'
+            block_name = f'{"S" + str(headname)}R{int(info[2]):02d}'
+            data = board.get_board_data()
+            data_copy = data.copy()
+            board_ID = BOARD[self.info[3]]
+            raw = getdata(data_copy,board_ID,n_samples = 250,dropEnable = DROPENABLE)
+            save_raw(raw,block_name,RECORDING_DIR,info)
+            IS_FINISH = True
 
         return IS_FINISH
     
@@ -230,6 +248,71 @@ class RecordWindow(QWidget):
         core.wait(second)
         stop  = time.time()
         print(f"Trigger time = {(stop-start)}  Second ")
+
+    def publish(self,client,output):
+        msg = f"{output}"
+        # main function to send
+        result = client.publish(TOPIC, output)
+        # result: [0, 1]
+        status = result[0]
+        if status == 0:
+            print(f"Send `{msg}` to topic `{TOPIC}`")
+        else:
+            print(f"Failed to send message to topic {TOPIC}")
+
+    def online_predict(self,board_shim,info,client,model):           
+        #Get data from board
+        data = board_shim.get_board_data()
+        data_copy = data.copy()
+        #sending and predict
+        raw = getdata(data_copy,info[3],n_samples = 250)
+        X_t,y_train = raw_preprocess(raw)
+        X_t = apply_baseline(X_t) 
+        #raw=raw.notch_filter([50])
+        #raw.filter(8,14, method='fir', verbose=20)
+
+        logging.info('--------------------------------------------------')
+        #train_epochs,epochs_raw_data,labels = getepoch(raw,-3,5)
+        logging.info('-------------------------------------------------')
+        logging.info('Sending')
+        #X_t,y_train = train_epochs.copy(),labels
+                    
+
+        X_tensor = torch.from_numpy(X_t).float()
+        y_tensor = torch.from_numpy(y_train).long()
+
+        output = model(X_tensor)
+        logging.info("Prob:{}".format(str(output)))
+        logging.info("Actual:{}".format(str(y_tensor)))
+
+        _, predicted = torch.max(output, 1)
+        logging.info("Predicted:{}".format(str(predicted)))
+        final_output = int(predicted[0].item())
+        
+        #print(IoT_output)
+        if final_output == 0:
+            output = 'left'
+        elif final_output == 1:
+            output = 'right'
+        print(output)
+        #self.publish(client,output)
+        core.wait(33)
+        throw = board_shim.get_board_data() 
+        #Back to rest stage?
+        #wait until finish rest stage       
+
+    def connect_mqtt(self):
+        def on_connect(client, userdata, flags, rc):
+            if rc == 0:
+                print("Connected to MQTT Broker!")
+            else:
+                print("Failed to connect, return code %d\n", rc)
+
+        client = mqtt_client.Client(CLIENT_ID)
+        client.username_pw_set(USERNAME, PASSWORD)
+        client.on_connect = on_connect
+        client.connect(BROKER, PORT)
+        return client
 
     # method for widgets
     def UiComponents(self):

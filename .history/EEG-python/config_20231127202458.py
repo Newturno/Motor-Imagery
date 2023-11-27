@@ -50,6 +50,7 @@ BLOCK_MARKER:dict = {0:1.0 , 1:2.0}
 
 
 SOUND_DICT:dict[int,str] = {0:'./sound/Left.wav',1:'./sound/Right.wav',4:'./sound/Rest.wav',3:'./sound/Start.wav',2:'./sound/Stop.wav'}
+FOOT = True
 
 IMAGE_DICT:dict[int,str] = {0:'./images/left/left2.png',1:'./images/right/right2.png'}
 VIDEO_DICT = [
