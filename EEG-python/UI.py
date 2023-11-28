@@ -193,6 +193,8 @@ class RecordWindow(QWidget):
         #Start
         logging.info(f"Experiment order: {sequence}")
         if info[4] == True:
+            self.playSound(sound_array[4],fs_array[4],1,board,5.0)
+            
             self.playSound(sound_array[3],fs_array[3],60,board,3.0)
         else:
             with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
@@ -268,6 +270,7 @@ class RecordWindow(QWidget):
         else:
             #goldcup,unicorn
             board_ID = BOARD[self.info[3]]
+            params.serial_port = SERIAL_PORT
             board_shim = BoardShim(board_ID, params)
 
         #board prepare
