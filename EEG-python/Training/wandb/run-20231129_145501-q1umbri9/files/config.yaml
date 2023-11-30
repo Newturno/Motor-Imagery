@@ -1,0 +1,51 @@
+wandb_version: 1
+
+learning_rate:
+  desc: null
+  value: 1.0e-07
+architecture:
+  desc: null
+  value: ConvNet
+dataset:
+  desc: null
+  value: Recorded
+epochs:
+  desc: null
+  value: 100000
+weightname:
+  desc: null
+  value: S21_CNN_iir_-2-5_8-13_4ch
+num_step_per_epoch:
+  desc: null
+  value: 1
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.13
+    cli_version: 0.15.12
+    framework: torch
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1701244501.744118
+    t:
+      1:
+      - 1
+      - 5
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 53
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.10.13
+      5: 0.15.12
+      8:
+      - 1
+      - 4
+      - 5
+      13: darwin-arm64

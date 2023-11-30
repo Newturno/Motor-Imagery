@@ -1,0 +1,3 @@
+torch.Size([5000, 1])
+torch.Size([100])
+torch.Size([5000, 1, 200])

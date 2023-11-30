@@ -1,0 +1,131 @@
+2023-11-29 14:53:06,920 INFO    StreamThr :22917 [internal.py:wandb_internal():86] W&B internal server running at pid: 22917, started at: 2023-11-29 14:53:06.920260
+2023-11-29 14:53:06,921 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status
+2023-11-29 14:53:06,925 INFO    WriterThread:22917 [datastore.py:open_for_write():85] open: /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231129_145306-r2utin4a/run-r2utin4a.wandb
+2023-11-29 14:53:06,925 DEBUG   SenderThread:22917 [sender.py:send():380] send: header
+2023-11-29 14:53:06,953 DEBUG   SenderThread:22917 [sender.py:send():380] send: run
+2023-11-29 14:53:07,992 INFO    SenderThread:22917 [dir_watcher.py:__init__():211] watching files in: /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231129_145306-r2utin4a/files
+2023-11-29 14:53:07,992 INFO    SenderThread:22917 [sender.py:_start_run_threads():1122] run started: r2utin4a with start time 1701244386.921335
+2023-11-29 14:53:08,004 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: check_version
+2023-11-29 14:53:08,004 DEBUG   SenderThread:22917 [sender.py:send_request():407] send_request: check_version
+2023-11-29 14:53:08,126 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: run_start
+2023-11-29 14:53:08,131 DEBUG   HandlerThread:22917 [system_info.py:__init__():32] System info init
+2023-11-29 14:53:08,132 DEBUG   HandlerThread:22917 [system_info.py:__init__():47] System info init done
+2023-11-29 14:53:08,132 INFO    HandlerThread:22917 [system_monitor.py:start():194] Starting system monitor
+2023-11-29 14:53:08,132 INFO    SystemMonitor:22917 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-29 14:53:08,132 INFO    HandlerThread:22917 [system_monitor.py:probe():214] Collecting system info
+2023-11-29 14:53:08,132 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started cpu monitoring
+2023-11-29 14:53:08,132 DEBUG   HandlerThread:22917 [system_info.py:probe():196] Probing system
+2023-11-29 14:53:08,132 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started disk monitoring
+2023-11-29 14:53:08,134 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started gpuapple monitoring
+2023-11-29 14:53:08,135 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started memory monitoring
+2023-11-29 14:53:08,136 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started network monitoring
+2023-11-29 14:53:08,140 DEBUG   HandlerThread:22917 [system_info.py:_probe_git():181] Probing git
+2023-11-29 14:53:08,164 DEBUG   HandlerThread:22917 [system_info.py:_probe_git():189] Probing git done
+2023-11-29 14:53:08,164 DEBUG   HandlerThread:22917 [system_info.py:probe():244] Probing system done
+2023-11-29 14:53:08,164 DEBUG   HandlerThread:22917 [system_monitor.py:probe():223] {'os': 'macOS-14.1.1-arm64-arm-64bit', 'python': '3.10.13', 'heartbeatAt': '2023-11-29T07:53:08.132949', 'startedAt': '2023-11-29T07:53:06.915492', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/Newturno/Motor-Imagery.git', 'commit': 'eed543843484fe34bf27461a287b7f599bca1a47'}, 'email': 'pongkorn_set@hotmail.com', 'root': '/Users/pongkornsettasompop/Desktop/work/Motor-Imagery', 'host': '172-10-20-17.lightspeed.clmasc.sbcglobal.net', 'username': 'pongkornsettasompop', 'executable': '/Users/pongkornsettasompop/anaconda3/envs/mi/bin/python', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 228.27386474609375, 'used': 128.16740036010742}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2023-11-29 14:53:08,164 INFO    HandlerThread:22917 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-29 14:53:08,164 INFO    HandlerThread:22917 [system_monitor.py:probe():227] Publishing system info
+2023-11-29 14:53:08,164 DEBUG   HandlerThread:22917 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-29 14:53:08,165 DEBUG   HandlerThread:22917 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-29 14:53:08,165 DEBUG   HandlerThread:22917 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-11-29 14:53:08,994 INFO    Thread-12 :22917 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231129_145306-r2utin4a/files/conda-environment.yaml
+2023-11-29 14:53:08,994 INFO    Thread-12 :22917 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231129_145306-r2utin4a/files/requirements.txt
+2023-11-29 14:53:11,283 DEBUG   HandlerThread:22917 [system_info.py:_save_conda():87] Saving conda packages done
+2023-11-29 14:53:11,284 INFO    HandlerThread:22917 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-29 14:53:11,286 DEBUG   SenderThread:22917 [sender.py:send():380] send: files
+2023-11-29 14:53:11,286 INFO    SenderThread:22917 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-11-29 14:53:11,295 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-29 14:53:11,295 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-29 14:53:11,295 DEBUG   SenderThread:22917 [sender.py:send_request():407] send_request: stop_status
+2023-11-29 14:53:11,295 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: pause
+2023-11-29 14:53:11,295 INFO    HandlerThread:22917 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-29 14:53:11,295 INFO    HandlerThread:22917 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-29 14:53:11,296 DEBUG   SystemMonitor:22917 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-29 14:53:11,296 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-29 14:53:11,296 DEBUG   SystemMonitor:22917 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-29 14:53:11,296 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined disk monitor
+2023-11-29 14:53:11,296 DEBUG   SystemMonitor:22917 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-29 14:53:11,346 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-11-29 14:53:11,346 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined memory monitor
+2023-11-29 14:53:11,346 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined network monitor
+2023-11-29 14:53:11,346 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: resume
+2023-11-29 14:53:11,346 INFO    HandlerThread:22917 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-29 14:53:11,346 INFO    HandlerThread:22917 [system_monitor.py:start():194] Starting system monitor
+2023-11-29 14:53:11,347 INFO    SystemMonitor:22917 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-29 14:53:11,347 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started cpu monitoring
+2023-11-29 14:53:11,347 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started disk monitoring
+2023-11-29 14:53:11,347 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started gpuapple monitoring
+2023-11-29 14:53:11,350 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started memory monitoring
+2023-11-29 14:53:11,350 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started network monitoring
+2023-11-29 14:53:11,779 DEBUG   SenderThread:22917 [sender.py:send():380] send: telemetry
+2023-11-29 14:53:11,780 DEBUG   SenderThread:22917 [sender.py:send():380] send: telemetry
+2023-11-29 14:53:11,780 DEBUG   SenderThread:22917 [sender.py:send():380] send: stats
+2023-11-29 14:53:11,828 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: pause
+2023-11-29 14:53:11,828 INFO    HandlerThread:22917 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-29 14:53:11,828 INFO    HandlerThread:22917 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-29 14:53:11,828 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-29 14:53:11,828 DEBUG   SystemMonitor:22917 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-29 14:53:11,828 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined disk monitor
+2023-11-29 14:53:11,828 DEBUG   SystemMonitor:22917 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-29 14:53:11,828 DEBUG   SystemMonitor:22917 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-29 14:53:11,937 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-11-29 14:53:11,937 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined memory monitor
+2023-11-29 14:53:11,937 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined network monitor
+2023-11-29 14:53:11,937 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: resume
+2023-11-29 14:53:11,937 INFO    HandlerThread:22917 [handler.py:handle_request_resume():696] starting system metrics thread
+2023-11-29 14:53:11,937 INFO    HandlerThread:22917 [system_monitor.py:start():194] Starting system monitor
+2023-11-29 14:53:11,938 INFO    SystemMonitor:22917 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-29 14:53:11,938 DEBUG   SenderThread:22917 [sender.py:send():380] send: stats
+2023-11-29 14:53:11,938 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started cpu monitoring
+2023-11-29 14:53:11,938 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:53:11,938 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started disk monitoring
+2023-11-29 14:53:11,941 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started gpuapple monitoring
+2023-11-29 14:53:11,941 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started memory monitoring
+2023-11-29 14:53:11,942 INFO    SystemMonitor:22917 [interfaces.py:start():190] Started network monitoring
+2023-11-29 14:53:12,009 INFO    Thread-12 :22917 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231129_145306-r2utin4a/files/conda-environment.yaml
+2023-11-29 14:53:12,009 INFO    Thread-12 :22917 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231129_145306-r2utin4a/files/output.log
+2023-11-29 14:53:12,009 INFO    Thread-12 :22917 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231129_145306-r2utin4a/files/wandb-metadata.json
+2023-11-29 14:53:12,540 INFO    wandb-upload_0:22917 [upload_job.py:push():131] Uploaded file /var/folders/qc/p47pk0895gqf_sgg3vgy46g40000gn/T/tmpargs_k2xwandb/gqptfi8w-wandb-metadata.json
+2023-11-29 14:53:12,631 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: pause
+2023-11-29 14:53:12,631 INFO    HandlerThread:22917 [handler.py:handle_request_pause():705] stopping system metrics thread
+2023-11-29 14:53:12,631 INFO    HandlerThread:22917 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-29 14:53:12,631 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-29 14:53:12,631 DEBUG   SystemMonitor:22917 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-29 14:53:12,631 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined disk monitor
+2023-11-29 14:53:12,632 DEBUG   SystemMonitor:22917 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-29 14:53:12,632 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-11-29 14:53:12,632 DEBUG   SystemMonitor:22917 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-29 14:53:12,632 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined memory monitor
+2023-11-29 14:53:12,632 INFO    HandlerThread:22917 [interfaces.py:finish():202] Joined network monitor
+2023-11-29 14:53:12,632 DEBUG   SenderThread:22917 [sender.py:send():380] send: stats
+2023-11-29 14:53:14,020 INFO    Thread-12 :22917 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231129_145306-r2utin4a/files/output.log
+2023-11-29 14:53:17,654 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:53:22,673 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:53:26,296 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-29 14:53:26,296 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-29 14:53:26,297 DEBUG   SenderThread:22917 [sender.py:send_request():407] send_request: stop_status
+2023-11-29 14:53:28,634 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:53:33,654 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:53:38,681 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:53:40,139 INFO    Thread-12 :22917 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231129_145306-r2utin4a/files/config.yaml
+2023-11-29 14:53:41,302 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-29 14:53:41,303 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-29 14:53:41,304 DEBUG   SenderThread:22917 [sender.py:send_request():407] send_request: stop_status
+2023-11-29 14:53:44,686 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:53:49,711 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:53:54,729 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:53:56,306 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-29 14:53:56,306 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-29 14:53:56,307 DEBUG   SenderThread:22917 [sender.py:send_request():407] send_request: stop_status
+2023-11-29 14:54:00,688 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:54:05,710 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:54:10,734 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:54:11,305 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-29 14:54:11,308 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-29 14:54:11,308 DEBUG   SenderThread:22917 [sender.py:send_request():407] send_request: stop_status
+2023-11-29 14:54:15,781 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:54:20,797 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:54:25,816 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: status_report
+2023-11-29 14:54:26,307 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: internal_messages
+2023-11-29 14:54:26,313 DEBUG   HandlerThread:22917 [handler.py:handle_request():146] handle_request: stop_status
+2023-11-29 14:54:26,314 DEBUG   SenderThread:22917 [sender.py:send_request():407] send_request: stop_status

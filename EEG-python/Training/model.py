@@ -67,7 +67,7 @@ class ConvNet2(nn.Module):
         #using sequential helps bind multiple operations together
         self.layer1 = nn.Sequential(
             #padding = (kernel_size - 1) / 2 = 2
-            nn.Conv1d(3, 32, kernel_size=10, stride=1, padding=2),
+            nn.Conv1d(4, 32, kernel_size=10, stride=1, padding=2),
             nn.BatchNorm1d(32),
             nn.ReLU(),
             # nn.MaxPool2d(kernel_size=2, stride=2)
