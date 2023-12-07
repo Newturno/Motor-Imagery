@@ -1,0 +1,37 @@
+2023-12-01 12:03:56,078 INFO    MainThread:61196 [wandb_setup.py:_flush():76] Current SDK version is 0.15.12
+2023-12-01 12:03:56,078 INFO    MainThread:61196 [wandb_setup.py:_flush():76] Configure stats pid to 61196
+2023-12-01 12:03:56,078 INFO    MainThread:61196 [wandb_setup.py:_flush():76] Loading settings from /Users/pongkornsettasompop/.config/wandb/settings
+2023-12-01 12:03:56,078 INFO    MainThread:61196 [wandb_setup.py:_flush():76] Loading settings from /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/settings
+2023-12-01 12:03:56,078 INFO    MainThread:61196 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-12-01 12:03:56,078 INFO    MainThread:61196 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-12-01 12:03:56,079 INFO    MainThread:61196 [wandb_init.py:_log_setup():528] Logging user logs to /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231201_120356-6v0f15q8/logs/debug.log
+2023-12-01 12:03:56,079 INFO    MainThread:61196 [wandb_init.py:_log_setup():529] Logging internal logs to /Users/pongkornsettasompop/Desktop/work/Motor-Imagery/EEG-python/Training/wandb/run-20231201_120356-6v0f15q8/logs/debug-internal.log
+2023-12-01 12:03:56,079 INFO    MainThread:61196 [wandb_init.py:_jupyter_setup():474] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x29215d030>
+2023-12-01 12:03:56,079 INFO    MainThread:61196 [wandb_init.py:init():568] calling init triggers
+2023-12-01 12:03:56,079 INFO    MainThread:61196 [wandb_init.py:init():575] wandb.init called with sweep_config: {}
+config: {'learning_rate': 1e-07, 'architecture': 'ConvNet', 'dataset': 'Recorded', 'epochs': 100000, 'weightname': 'S21_CNN_iir_LFRF_4ch', 'num_step_per_epoch': 1}
+2023-12-01 12:03:56,079 INFO    MainThread:61196 [wandb_init.py:init():618] starting backend
+2023-12-01 12:03:56,079 INFO    MainThread:61196 [wandb_init.py:init():622] setting up manager
+2023-12-01 12:03:56,080 INFO    MainThread:61196 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-12-01 12:03:56,082 INFO    MainThread:61196 [wandb_init.py:init():628] backend started and connected
+2023-12-01 12:03:56,085 INFO    MainThread:61196 [wandb_run.py:_label_probe_notebook():1276] probe notebook
+2023-12-01 12:03:56,086 INFO    MainThread:61196 [wandb_run.py:_label_probe_notebook():1286] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-12-01 12:03:56,086 INFO    MainThread:61196 [wandb_init.py:init():720] updated telemetry
+2023-12-01 12:03:56,116 INFO    MainThread:61196 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2023-12-01 12:03:56,933 INFO    MainThread:61196 [wandb_run.py:_on_init():2220] communicating current version
+2023-12-01 12:03:57,015 INFO    MainThread:61196 [wandb_run.py:_on_init():2229] got version response upgrade_message: "wandb version 0.16.0 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-12-01 12:03:57,015 INFO    MainThread:61196 [wandb_init.py:init():804] starting run threads in backend
+2023-12-01 12:03:59,960 INFO    MainThread:61196 [wandb_run.py:_console_start():2199] atexit reg
+2023-12-01 12:03:59,960 INFO    MainThread:61196 [wandb_run.py:_redirect():2054] redirect: wrap_raw
+2023-12-01 12:03:59,960 INFO    MainThread:61196 [wandb_run.py:_redirect():2119] Wrapping output streams.
+2023-12-01 12:03:59,960 INFO    MainThread:61196 [wandb_run.py:_redirect():2144] Redirects installed.
+2023-12-01 12:03:59,960 INFO    MainThread:61196 [wandb_init.py:init():845] run started, returning control to user process
+2023-12-01 12:03:59,961 INFO    MainThread:61196 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-12-01 12:03:59,961 INFO    MainThread:61196 [wandb_init.py:_pause_backend():438] pausing backend
+2023-12-01 12:03:59,964 INFO    MainThread:61196 [wandb_init.py:_resume_backend():443] resuming backend
+2023-12-01 12:03:59,968 INFO    MainThread:61196 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-12-01 12:03:59,968 INFO    MainThread:61196 [wandb_init.py:_pause_backend():438] pausing backend
+2023-12-01 12:03:59,971 INFO    MainThread:61196 [wandb_init.py:_resume_backend():443] resuming backend
+2023-12-01 12:52:16,693 INFO    MainThread:61196 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-12-01 12:52:16,694 INFO    MainThread:61196 [wandb_init.py:_pause_backend():438] pausing backend

@@ -1,0 +1,36 @@
+{
+    "os": "macOS-14.1.1-arm64-arm-64bit",
+    "python": "3.10.13",
+    "heartbeatAt": "2023-12-01T03:24:28.967262",
+    "startedAt": "2023-12-01T03:24:27.728945",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/Newturno/Motor-Imagery.git",
+        "commit": "b4db63dfb681e2e9359040ed8ba36491892120c8"
+    },
+    "email": "pongkorn_set@hotmail.com",
+    "root": "/Users/pongkornsettasompop/Desktop/work/Motor-Imagery",
+    "host": "172-10-20-17.lightspeed.clmasc.sbcglobal.net",
+    "username": "pongkornsettasompop",
+    "executable": "/Users/pongkornsettasompop/anaconda3/envs/mi/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 228.27386474609375,
+            "used": 142.52664947509766
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

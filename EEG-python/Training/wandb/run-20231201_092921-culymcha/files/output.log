@@ -1,0 +1,24 @@
+
+Epoch 1/100000, Tr Loss: 0.7236, Tr Acc: 55.7143, Val Loss: 0.7147, Val Acc: 43.3333
+Epoch 101/100000, Tr Loss: 0.7329, Tr Acc: 51.4286, Val Loss: 0.7133, Val Acc: 46.6667
+Epoch 201/100000, Tr Loss: 0.7648, Tr Acc: 51.4286, Val Loss: 0.7136, Val Acc: 46.6667
+Epoch 301/100000, Tr Loss: 0.7268, Tr Acc: 51.4286, Val Loss: 0.7137, Val Acc: 50.0000
+Epoch 401/100000, Tr Loss: 0.7196, Tr Acc: 51.4286, Val Loss: 0.7138, Val Acc: 50.0000
+Epoch 501/100000, Tr Loss: 0.7749, Tr Acc: 48.5714, Val Loss: 0.7140, Val Acc: 50.0000
+Epoch 601/100000, Tr Loss: 0.7378, Tr Acc: 51.4286, Val Loss: 0.7140, Val Acc: 50.0000
+Epoch 701/100000, Tr Loss: 0.7300, Tr Acc: 48.5714, Val Loss: 0.7143, Val Acc: 50.0000
+Epoch 801/100000, Tr Loss: 0.8039, Tr Acc: 41.4286, Val Loss: 0.7143, Val Acc: 50.0000
+Epoch 901/100000, Tr Loss: 0.7787, Tr Acc: 45.7143, Val Loss: 0.7147, Val Acc: 46.6667
+Epoch 1001/100000, Tr Loss: 0.7357, Tr Acc: 48.5714, Val Loss: 0.7146, Val Acc: 46.6667
+Epoch 1101/100000, Tr Loss: 0.7417, Tr Acc: 54.2857, Val Loss: 0.7148, Val Acc: 46.6667
+Epoch 1201/100000, Tr Loss: 0.6951, Tr Acc: 52.8571, Val Loss: 0.7146, Val Acc: 46.6667
+Epoch 1301/100000, Tr Loss: 0.7673, Tr Acc: 54.2857, Val Loss: 0.7148, Val Acc: 43.3333
+Epoch 1401/100000, Tr Loss: 0.7204, Tr Acc: 58.5714, Val Loss: 0.7149, Val Acc: 43.3333
+Epoch 1501/100000, Tr Loss: 0.7321, Tr Acc: 51.4286, Val Loss: 0.7151, Val Acc: 43.3333
+Epoch 1601/100000, Tr Loss: 0.7987, Tr Acc: 45.7143, Val Loss: 0.7150, Val Acc: 43.3333
+Epoch 1701/100000, Tr Loss: 0.6559, Tr Acc: 61.4286, Val Loss: 0.7152, Val Acc: 43.3333
+Epoch 1801/100000, Tr Loss: 0.7124, Tr Acc: 55.7143, Val Loss: 0.7154, Val Acc: 43.3333
+Epoch 1901/100000, Tr Loss: 0.6728, Tr Acc: 57.1429, Val Loss: 0.7154, Val Acc: 43.3333
+Epoch 2001/100000, Tr Loss: 0.7673, Tr Acc: 52.8571, Val Loss: 0.7155, Val Acc: 43.3333
+Epoch 2101/100000, Tr Loss: 0.7405, Tr Acc: 51.4286, Val Loss: 0.7158, Val Acc: 43.3333
+Epoch 2201/100000, Tr Loss: 0.7142, Tr Acc: 52.8571, Val Loss: 0.7159, Val Acc: 43.3333

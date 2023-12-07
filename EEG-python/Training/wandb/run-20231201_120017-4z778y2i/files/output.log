@@ -1,0 +1,5 @@
+
+Epoch 1/100000, Tr Loss: 0.8198, Tr Acc: 44.2857, Val Loss: 0.7049, Val Acc: 50.0000
+Epoch 101/100000, Tr Loss: 0.7508, Tr Acc: 57.1429, Val Loss: 0.7106, Val Acc: 40.0000
+Epoch 201/100000, Tr Loss: 0.8532, Tr Acc: 51.4286, Val Loss: 0.7105, Val Acc: 40.0000
+Epoch 301/100000, Tr Loss: 0.7635, Tr Acc: 50.0000, Val Loss: 0.7101, Val Acc: 40.0000

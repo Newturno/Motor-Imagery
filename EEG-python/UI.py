@@ -193,9 +193,10 @@ class RecordWindow(QWidget):
         #Start
         logging.info(f"Experiment order: {sequence}")
         if info[4] == True:
-            self.playSound(sound_array[4],fs_array[4],1,board,5.0)
-            
-            self.playSound(sound_array[3],fs_array[3],60,board,3.0)
+            for trials in range(NUM_TRIAL):
+                self.playSound(sound_array[4],fs_array[4],1,board,5.0)
+                
+                self.playSound(sound_array[3],fs_array[3],6,board,3.0)
         else:
             with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
                 for trials in range(NUM_TRIAL):

@@ -154,12 +154,12 @@ class EEG:
                 epochs[e,c,:] = epochs[e,c,:] - baseline[e,c]
         
         return epochs
-    def epochs(self,raw,tmin,tmax,baseline):
+    def epochs(self,raw,tmin,tmax,event_id,baseline):
         events = mne.find_events(raw, stim_channel='STIM MARKERS',verbose='error')
         epochs = mne.Epochs(
         raw,
         events,
-        event_id=[1,2],
+        event_id=event_id,
         tmin=tmin,
         tmax=tmax,
         picks="data",
