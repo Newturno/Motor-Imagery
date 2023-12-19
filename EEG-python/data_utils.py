@@ -61,7 +61,8 @@ def getdata(data,board,clear_buffer=False,n_samples=None,dropEnable = False):
     marker_channel = BoardShim.get_marker_channel(board)
     
     #row which hold eeg data
-    eeg_channels = BoardShim.get_eeg_channels(board)[:8]
+    eeg_channels = BoardShim.get_eeg_channels(board)[:16]
+    print(len(eeg_channels))
     print(f'Before {data[eeg_channels]}')
     #data[eeg_channels] = data[eeg_channels] / 1e6
     
@@ -70,11 +71,13 @@ def getdata(data,board,clear_buffer=False,n_samples=None,dropEnable = False):
     print(f'After {data[eeg_channels]}')
     #eeg row + marker row (8 + 1)
     data = data[eeg_channels + [marker_channel]]
+    print(len(data))
     
-    #string of all channel name ['Fp1', 'Fp2', 'C3', 'C4', 'P7', 'P8', 'O1', 'O2']
-    ch_names = ['F3','F4','T3','C3','CZ','C4','T4','Pz']+ ['STIM MARKERS']
+     #string of all channel name ['Fp1', 'Fp2', 'C3', 'C4', 'P7', 'P8', 'O1', 'O2']
+    ch_names = ['FP1','FP2','F7','F3','FZ','F4','F8','T3','C3','CZ','C4','T4','P3','P4','O1','O2']+ ['STIM MARKERS']
+    print(len(ch_names))
     #ch_names = ['C3', 'C4', 'CZ'] + ['STIM MARKERS']
-    ch_types = ['eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','stim']
+    ch_types = ['eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','eeg','stim']
     
     #ch_names = ['PZ','T3','C3','CZ','C4','T4'] + ['STIM MARKERS']
     #ch_types = ['eeg','eeg','eeg','eeg','eeg','eeg','stim']

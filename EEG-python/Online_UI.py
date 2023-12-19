@@ -10,7 +10,6 @@ from psychopy import core,gui
 from data_utils import *
 import logging
 from config import *
-from beeply.notes import *
 import sounddevice as sd
 import soundfile as sf
 import concurrent.futures
@@ -41,7 +40,7 @@ class MainWindow(QMainWindow):
         self.UiComponents()
         self.fileURL = ONLINE_PATH_DICT["New"]
         self.boardID = BOARD["OpenBCI"]
-        
+        print(self.ui_width,self.ui_height)
         
         # showing all the widgets
         self.show()

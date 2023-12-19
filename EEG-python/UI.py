@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import (
     QPushButton,QHBoxLayout,QVBoxLayout,QStackedLayout,QWidget,QLineEdit,QComboBox
 )
 from PyQt5.QtGui import QIcon,QPixmap
-from PyQt5.QtCore import Qt,QSize
+from PyQt5.QtCore import Qt,QSize,pyqtSignal,QThread
 from psychopy import core,gui
 from data_utils import *
 import logging
@@ -29,6 +29,10 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.w = None
         self.setWindowTitle("Infomation")
+        screen = QApplication.primaryScreen()
+        size = screen.size()
+        self.ui_width = size.width()
+        self.ui_height = size.height()
         self.info = []
         #layout in box
         pagelayout = QHBoxLayout()
@@ -170,7 +174,6 @@ class ModeWindow(QWidget):
         if self.fileURL :
             # Do something with the selected file, for example, print its path
             print("Selected file:", self.fileURL )
-        
 class RecordWindow(QWidget):
     def getSound(self):
         sound_array = []
@@ -203,7 +206,7 @@ class RecordWindow(QWidget):
                     print(f'{"Trials :" + str(trials+1)}')
                     #voice left and right and rest
                     #rest 2 sec
-                    self.playSound(sound_array[4],fs_array[4],1,board,3.0)
+                    self.playSound(sound_array[4],fs_array[4],1,board,5.0)
                     #cue and Imagine 6 sec
                     self.playSound(sound_array[sequence[trials]],fs_array[sequence[trials]],6,board,BLOCK_MARKER[sequence[trials]])
                 
@@ -323,9 +326,9 @@ class RecordWindow(QWidget):
         self.UiComponents()
 
         self.show()
-        
-        self.start()
-        
+        if self.isVisible():
+            self.start()
+            
 
 stylesheet = """
     MainWindow {

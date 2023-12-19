@@ -10,9 +10,10 @@ import random
 #[1366,768]
 #[1536,864]
 #SCREEN_SIZE:array = [1920,1080]
+STIMULIT_SEQUENCE = [0,3,1,3,0,3,1,3,0,3,1,3,0,3,1,3,0,3,1,3,0,3,1,3,0,3,1,3,0,3,1,3,0,3,1,3,0,3,1,3]
 SCREEN_SIZE:array = [1536, 864]
 TOTAL_IMAGE:int = 2
-NUM_TRIAL:int = 20#20
+NUM_TRIAL:int = len(STIMULIT_SEQUENCE)
 STIM_CHECK = 0
 # baseline run
 BASELINE_EYEOPEN:int = 60 #60second
@@ -33,7 +34,7 @@ TIME_OUT = 0
 IP_PORT = 0
 IP_PROTOCOL = 0
 IP_ADDRESS =''
-BOARD_ID = 0 # 0 = openbci 8 = unicorn
+BOARD_ID = 2 # 0 = openbci 8 = unicorn 2 = cyton daisy
 SERIAL_PORT = "/dev/cu.usbserial-DM03GRPK"
 MAC_ADDRESS = ''
 OTHER = ''
@@ -46,17 +47,17 @@ PRESET = 0
 #Marker config
 #BLOCK_DICT:dict[int,str] = {1:'execute_left',2:'executed_right',3:'imagine_left',4:'imagine_right' }
 BLOCK_DICT:dict[int,str] = {1:'execute',2:'imagine',3:'executed',4:'imagine' }
-BLOCK_MARKER:dict = {0:1.0 , 1:2.0}
+BLOCK_MARKER:dict = {0:1.0 , 1:2.0,3:3.0}
 
 
-SOUND_DICT:dict[int,str] = {0:'./sound/Left.wav',1:'./sound/Right.wav',4:'./sound/Rest.wav',3:'./sound/Start.wav',2:'./sound/Stop.wav'}
+SOUND_DICT:dict[int,str] = {0:'./sound/Left.wav',1:'./sound/Right.wav',4:'./sound/Standby.wav',3:'./sound/Rest.wav',2:'./sound/Stop.wav'}
 
-IMAGE_DICT:dict[int,str] = {0:'./images/left/left2.png',1:'./images/right/right2.png'}
+IMAGE_DICT:dict[int,str] = {0:'./images/left/left.png',1:'./images/right/right.png'}
 VIDEO_DICT = [
  { 0:'./video/left/left3.mp4', 1: './video/right/right3.mp4' },
  { 0: './video/left/left2.avi', 1: './video/right/right2.avi' },
  ]
-STIMULIT_SEQUENCE = [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+
 #STIMULIT_SEQUENCE = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 #STIMULIT_SEQUENCE = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 IS_VIDEO:bool = True
@@ -84,7 +85,7 @@ IS_ONLINE:dict = {'Off':False , 'On':True}
 CHOICE:dict = {'0':False , '1':True}
 #unicorn 8 neuro crown 23
 IS_DUMMY:dict = {'0': 0 , '1': 8, '2': -1}
-BOARD:dict = {"OpenBCI":0 , "Unicorn":8,"Dummy":-1,"Goldcup":0}
+BOARD:dict = {"OpenBCI":0 , "Unicorn":8,"Dummy":-1,"Goldcup":2}
 #BOARD:dict = {0:0 , 1:0,2:-1}
 IS_FINETUNE:bool = False
 
